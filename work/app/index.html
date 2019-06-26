@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- register service worker -->
+    <script>
+      if ('serviceWorker' in navigator){
+        window.addEventListener('load', function() {
+           navigator.serviceWorker.register('./service-worker.js')
+        .then(function() { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+       });
+     }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your First Progressive Web App</title>
+    <link href="assets/css/app.main.css" rel="stylesheet">
+    <link href="https://unpkg.com/primer/build/build.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="Subhead">
+            <div class="Subhead-heading">Latest bUZZ</div>
+            <div class="Subhead-description">Learn how to build Progressive Web Apps with <a href="https;//pwafire.org" target="_blank" rel="noopenner">pwafire.org</a>
+                webdev resources</div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="tabnav">
+            <nav class="tabnav-tabs" aria-label="Foo bar">
+                <a href="#tools" class="tabnav-tab selected" aria-current="page">Tools<span class="Counter">3</a>
+                <a href="" class="tabnav-tab">Codelabs</a>
+            </nav>
+        </div>
+        
+        <div class="Box">
+            <div class="Box-row d-flex flex-items-center">
+                <div class="flex-auto">
+                    <strong>Browser Test Tool</strong>
+                    <div class="text-small text-gray-light">
+                        How Progressive is your favourite Web Browser? Test it now.
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" name="button">View</button>
+            </div>
+            <div class="Box-row d-flex flex-items-center">
+                <div class="flex-auto">
+                    <strong>PWA VS Code</strong>
+                    <div class="text-small text-gray-light">
+                        Code snippets extension for PWAs in VS Code.
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" name="button">View</button>
+            </div>
+            <div class="Box-row d-flex flex-items-center">
+                <div class="flex-auto">
+                    <strong>Jenga</strong>
+                    <div class="text-small text-gray-light">
+                        A Progressive Web Apps User Interface framework.
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" name="button">View</button>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>

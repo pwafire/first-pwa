@@ -8,3 +8,7 @@ header, main {
 .Subhead {
     margin-bottom: 0px !important;
 }
+
+.issue {
+    margin-top: 20px;
+}

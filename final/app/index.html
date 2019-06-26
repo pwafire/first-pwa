@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- register service worker -->
+    <script>
+      if ('serviceWorker' in navigator){
+        window.addEventListener('load', function() {
+           navigator.serviceWorker.register('./service-worker.js')
+        .then(function() { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+       });
+     }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your First Progressive Web App - PWA Fire Developers</title>
     <link rel="shortcut icon" sizes="32x32" href="https://pwafire.org/images/pwafire32white.png">
+    <!-- start of Web Manifest -->
+       <link rel="manifest" href="./app.webmanifest">
+    <!-- end of Web Manifest -->
+    <!-- theme-color -->
+       <meta name="theme-color" content="#000" />
+    <!-- end-theme-color -->
     <link href="assets/css/app.main.css" rel="stylesheet">
     <link href="https://unpkg.com/primer/build/build.css" rel="stylesheet">
 </head>
@@ -83,10 +98,11 @@
     </main>
 
     <footer>
-        <p> 
-            Made with <a href="https://primer.style/" target="_blank" rel="noopenner">GitHub's Primer</a>. 
-            You can <a href="https://github.com/pwafire/first-pwa/fork" target="_blank" rel="noopenner">fork on the project here</a>
-        </p>
+
+        <p>Made with <a href="https://primer.style/" target="_blank" rel="noopenner">GitHub's Primer</a>. You can <a href="https://github.com/pwafire/first-pwa/fork" target="_blank" rel="noopenner">fork on the project here</a></p>
+       
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
 </body>
 </html>

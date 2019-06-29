@@ -1,3 +1,4 @@
-# first-pwa
+# build your [first-pwa](https://pwabuzz.web.app/)
 
-Build your first progressive web app with [pwafire.org](https://pwafire.org)
+Learn your first progressive web app with [pwafire.org](https://pwafire.org) in [this starter codelab](
+https://pwafire.org/developer/codelabs/pwafire/)

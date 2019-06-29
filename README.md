@@ -22,4 +22,4 @@ We will be adding a more advanced codelab to help you learn how to build Progres
 
 ## Demo in play...
 
-Whoaaa 🎉 we gatcho! You'll be able to finally create a progressive web app that [looks like me here](https://pwabuzz.web.app/)
+Whoaaa 🎉 we gatchu! You'll be able to finally create a progressive web app that [looks like me here](https://pwabuzz.web.app/)

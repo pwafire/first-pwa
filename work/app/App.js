@@ -21,7 +21,8 @@ const html = `
       <img src="${avatar}" alt="${name}" />
       <h1 class="name">${name}</h1>
       <p class="bio">${bio}</p>
-      <a class="username" href="https://twitter.com/${twitter}" target="_blank">${twitter}</a>
+      <a class="username" href="https://twitter.com/${twitter}" target="_blank">@${twitter}</a>
+      <p><small><a class="username" href="https://github.com/pwafire/first-pwa" target="_blank">Source Code</a></small></p>
     </section>
 `;
 

@@ -1,108 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- register service worker -->
+    <!-- Register service worker -->
     <script>
-      if ('serviceWorker' in navigator){
-        window.addEventListener('load', function() {
-           navigator.serviceWorker.register('./service-worker.js')
-        .then(function() { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
-       });
-     }
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(function () { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+            });
+        }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your First Progressive Web App - PWA Fire Developers</title>
+    <title>Home - Welcome</title>
     <link rel="shortcut icon" sizes="32x32" href="https://pwafire.org/images/pwafire32white.png">
-    <!-- start of Web Manifest -->
-       <link rel="manifest" href="./app.webmanifest">
-    <!-- end of Web Manifest -->
-    <!-- theme-color -->
-       <meta name="theme-color" content="#000" />
-    <!-- end-theme-color -->
-    <link href="assets/css/app.main.css" rel="stylesheet">
-    <link href="https://unpkg.com/primer/build/build.css" rel="stylesheet">
+    <!-- Start of Web Manifest -->
+    <link rel="manifest" href="./app.webmanifest">
+    <!-- Theme-color -->
+    <meta name="theme-color" content="#000" />
+    <link href="./App.css" rel="stylesheet">
 </head>
+
 <body>
-
-    <header>
-        <div class="Subhead">
-            <div class="Subhead-heading">pwabuzz</div>
-            <div class="Subhead-description">Learn how to build Progressive Web Apps with <a href="https://pwafire.org" target="_blank" rel="noopenner">pwafire.org</a>
-                webdev resources</div>
-        </div>
-    </header>
-
-    <main>
-
-        <div class="tabnav">
-            <nav class="tabnav-tabs" aria-label="Foo bar">
-                <a href="#tools" class="tabnav-tab selected" aria-current="page">Tools<span class="Counter">3</a>
-                <a href="" class="tabnav-tab">Codelabs</a>
-            </nav>
-        </div>
-        
-        <div class="Box">
-            <div class="Box-row d-flex flex-items-center">
-                <div class="flex-auto">
-                    <strong>Browser Test Tool</strong>
-                    <div class="text-small text-gray-light">
-                        How Progressive is your favourite Web Browser? Test it now.
-                    </div>
-                </div>
-                <a href="https://pwafire.org/developer/tools/browser-test/" target="_blank" rel="noopenner"
-                    type="button" class="btn btn-primary" name="button">View</a>
-            </div>
-            <div class="Box-row d-flex flex-items-center">
-                <div class="flex-auto">
-                    <strong>PWA VS Code</strong>
-                    <div class="text-small text-gray-light">
-                        Code snippets extension for PWAs in VS Code.
-                    </div>
-                </div>
-                <a href="https://pwafire.org/developer/docs/how-to-use-vscode-pwa-in-vscode/" target="_blank" rel="noopenner" type="button"
-                    class="btn btn-primary" name="button">View</a>
-            </div>
-            <div class="Box-row d-flex flex-items-center">
-                <div class="flex-auto">
-                    <strong>Jenga</strong>
-                    <div class="text-small text-gray-light">
-                        A Progressive Web Apps User Interface framework.
-                    </div>
-                </div>
-                <a href="https://pwafire.org/developer/docs/progressive-user-interface/" target="_blank" rel="noopenner" type="button" class="btn btn-primary" name="button">View</a>
-            </div>
-        </div>
-    
-       <section class="issue">
-        <div class="profile-timeline-card bg-white border border-gray-dark rounded-1 p-3">
-            <svg class="octicon octicon-issue-closed closed d-inline-block mt-1 float-left" title="Closed" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-                <path fill-rule="evenodd" d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 0 1 2.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 0 0 8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"></path>
-            </svg>
-            <div class="ml-4">
-                <h3 class="lh-condensed my-0">
-                    <a class="text-gray-dark" data-hovercard-type="issue" href="https://pwafire.org/developer/docs/progressive-user-interface/">Adopt Jenga background and foreground color</a>
-                </h3>
-        
-                <div class="text-gray mb-0 mt-2 ">
-                    <p>Jenga theming</p>
-                </div>
-        
-                <div class="f6 text-gray mt-2">
-                    1 comment
-                </div>
-            </div>
-        </div>
-       </section>
-    </main>
-
-    <footer>
-
-        <p>Made with <a href="https://primer.style/" target="_blank" rel="noopenner">GitHub's Primer</a>. You can <a href="https://github.com/pwafire/first-pwa/fork" target="_blank" rel="noopenner">fork the project here</a></p>
-       
-    </footer>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+    <main id="root"></main>
+    <script src="./App.js"></script>
 </body>
+
 </html>

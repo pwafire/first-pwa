@@ -3,8 +3,8 @@
 "display": "standalone",
 "orientation":"portrait",
 "theme_color": "#000",
-"short_name": "pwabuzz",
-"name": "pwabuzz",
+"short_name": "PWA",
+"name": "Personal PWA",
 "description": "pwabuzz by pwafire.org",
 "lang": "en-US",
 "icons": [

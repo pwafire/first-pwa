@@ -21,10 +21,23 @@
     <!-- Theme-color -->
     <meta name="theme-color" content="#000" />
     <link href="./App.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pwafire.org/code/mulika/@latest.css" />
 </head>
 
 <body>
     <main id="root"></main>
+    <section id="mulika" class="mulika">
+        <div class="top">
+            <div class="btns">
+                <span class="circle red"></span>
+                <span class="circle yellow"></span>
+                <span class="circle green"></span>
+                <span class="mulika-title">Mulika Tests</span>
+            </div>
+        </div>
+        <pre class="tests" id="tests"></pre>
+    </section>
+
     <script src="./App.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
@@ -36,6 +49,8 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
+    <script src="https://pwafire.org/code/mulika/@latest.js"></script>
+    <script src="./Test.js" ></script>
 </body>
 
 </html>
